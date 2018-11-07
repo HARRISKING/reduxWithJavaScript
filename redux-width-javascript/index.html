@@ -9,7 +9,7 @@
 <body>
     <div id='app'>
         <div>
-            <p>您点击了 <span id="value">0</span> </p>
+            <p>您点击了 <span id="value"></span> </p>
             <button id='add' onclick='add1("add",1)'>+1</button>
             <button id='add' onclick='add1("add",2)'>+2</button>
             <button id='addOod' onclick='add1("addOod",1)'>如果单数就加一</button>
@@ -19,7 +19,7 @@
 
     <script src="https://cdn.bootcss.com/redux/4.0.1/redux.min.js"></script>
     <script>
-        // 发布订阅模式
+        // 其实就是发布订阅模式
 
         function add1(type,number){
             // 第一步：派发一个动作，dispatch一个action
