@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {Redux,createStore} from 'redux'
+// 生成store——存储state的地方
+const store = Redux.createStore(stateChanger)
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
